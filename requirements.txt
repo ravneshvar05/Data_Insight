@@ -1,0 +1,27 @@
+# Core Framework
+streamlit==1.31.1
+
+# Data Processing
+pandas==2.2.0
+numpy==1.26.3
+
+# Visualization
+plotly==5.18.0
+
+# Statistics & ML
+scikit-learn==1.4.0
+scipy==1.12.0
+
+# LLM Integration
+groq==0.11.0
+
+# Configuration & Environment
+python-dotenv==1.0.1
+pyyaml==6.0.1
+
+# PDF Generation
+reportlab==4.0.9
+Pillow==10.2.0
+
+# Utilities
+python-dateutil==2.8.2

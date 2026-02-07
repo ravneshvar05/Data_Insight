@@ -1,0 +1,76 @@
+app:
+  name: "Automated Data Insight System"
+  version: "1.0.0"
+  max_file_size_mb: 100
+  supported_formats:
+    - csv
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  max_bytes: 10485760  # 10MB
+  backup_count: 5
+  log_dir: "logs"
+
+profiling:
+  # Patterns to identify ID/index columns
+  id_column_patterns:
+    - "id"
+    - "index"
+    - "key"
+    - "_id"
+    - "uuid"
+    - "guid"
+  # Threshold for considering a column as high cardinality (ID-like)
+  high_cardinality_threshold: 0.95
+  # Correlation threshold for identifying strong relationships
+  correlation_threshold: 0.6
+  # Outlier detection method
+  outlier_method: "IQR"
+  outlier_multiplier: 1.5
+  # Missing data threshold for flagging columns
+  high_missing_threshold: 0.5
+  # Top N categories to show for categorical columns
+  top_categories_count: 10
+
+llm:
+  provider: "groq"
+  # Faster model for visualization planning
+  visualization_model: "llama-3.1-8b-instant"
+  # Stronger model for insight generation
+  insight_model: "llama-3.3-70b-versatile"
+  max_tokens: 4096
+  temperature: 0.3
+  timeout: 30
+  max_retries: 3
+
+visualization:
+  min_plots: 5
+  max_plots: 8
+  default_theme: "plotly_white"
+  color_palette:
+    - "#1f77b4"
+    - "#ff7f0e"
+    - "#2ca02c"
+    - "#d62728"
+    - "#9467bd"
+    - "#8c564b"
+    - "#e377c2"
+    - "#7f7f7f"
+
+insights:
+  min_words: 800
+  max_words: 1200
+  output_format: "markdown"
+  sections:
+    - "Executive Summary"
+    - "Key Insights"
+    - "Risks & Anomalies"
+    - "Opportunities"
+    - "Actionable Recommendations"
+
+report:
+  title_font_size: 24
+  heading_font_size: 16
+  body_font_size: 11
+  page_margin: 72  # 1 inch in points
