@@ -32,28 +32,166 @@ except Exception as e:
 # Custom CSS
 st.markdown("""
 <style>
+    /* Import Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    /* Global Typography */
+    html, body, [class*="css"] {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-color);
+    }
+
+    /* -------------------------------------------------------------------------
+       SIDEBAR STYLING - Enhanced with Variables
+       ------------------------------------------------------------------------- */
+    [data-testid="stSidebar"] {
+        background-color: var(--secondary-background-color);
+        border-right: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    /* Navigation Radio Buttons - Pill Style */
+    [data-testid="stRadio"] > div {
+        background-color: transparent;
+        padding: 0;
+    }
+    
+    /* Define the look of options */
+    [data-testid="stRadio"] label {
+        background-color: transparent;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem !important;
+        margin-bottom: 0.25rem;
+        transition: all 0.2s ease-in-out;
+        color: var(--text-color);
+        border: 1px solid transparent;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    /* Hover State */
+    [data-testid="stRadio"] label:hover {
+        background-color: rgba(128, 128, 128, 0.1);
+        opacity: 1;
+    }
+
+    /* Selected State */
+    [data-testid="stRadio"] label[data-checked="true"] {
+        background-color: var(--primary-color);
+        color: #ffffff !important; /* Always white on primary color */
+        font-weight: 600;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    /* -------------------------------------------------------------------------
+       MAIN CONTENT STYLING - Professional Layout
+       ------------------------------------------------------------------------- */
+    .stApp {
+        background-color: var(--background-color);
+    }
+
+    /* Main Header */
     .main-header {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #1f77b4;
-        text-align: center;
-        margin-bottom: 1rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 2.25rem;
+        font-weight: 800;
+        color: var(--text-color);
+        text-align: left;
+        margin-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        letter-spacing: -0.025em;
     }
     .sub-header {
-        font-size: 1.2rem;
-        color: #555;
-        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        color: var(--text-color);
+        opacity: 0.7;
+        text-align: left;
         margin-bottom: 2rem;
+        padding-left: 0.5rem;
+        font-weight: 400;
     }
-    .stButton>button {
-        width: 100%;
+    
+    /* Native Component Containers ("Cards") */
+    /* Target common block containers to give them 'Card' look */
+    [data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"] {
+        background-color: var(--secondary-background-color); /* Use secondary bg for card feel */
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     }
-    .metric-card {
-        background-color: #f0f2f6;
+    
+    /* However, ensure nested blocks don't double-pad */
+    [data-testid="stVerticalBlock"] [data-testid="stVerticalBlock"] {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    /* Metric Cards */
+    [data-testid="stMetric"] {
+        background-color: var(--secondary-background-color);
         padding: 1rem;
         border-radius: 0.5rem;
-        margin: 0.5rem 0;
+        border: 1px solid rgba(128, 128, 128, 0.2);
     }
+    [data-testid="stMetricLabel"] {
+        color: var(--text-color);
+        opacity: 0.7;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+    [data-testid="stMetricValue"] {
+        color: var(--text-color);
+        font-weight: 700;
+        font-size: 1.5rem !important;
+    }
+
+    /* DataFrames */
+    [data-testid="stDataFrame"] {
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        border-radius: 0.5rem;
+        overflow: hidden;
+    }
+    
+    /* Buttons */
+    .stButton > button {
+        border-radius: 0.5rem;
+        font-weight: 600;
+        border: none;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        transition: transform 0.1s;
+    }
+    .stButton > button:active {
+        transform: scale(0.98);
+    }
+    
+    /* Secondary Button (Standard) */
+    [data-testid="baseButton-secondary"] {
+        background-color: transparent;
+        border: 1px solid rgba(128, 128, 128, 0.4);
+        color: var(--text-color);
+    }
+    [data-testid="baseButton-secondary"]:hover {
+        border-color: var(--primary-color);
+        color: var(--primary-color);
+    }
+
+    /* Headings */
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text-color);
+        font-weight: 700;
+        letter-spacing: -0.025em;
+    }
+
+    /* -------------------------------------------------------------------------
+       HIDE STREAMLIT CHROME (The "App" Look)
+       ------------------------------------------------------------------------- */
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    [data-testid="stDeployButton"] {display: none;}
 </style>
 """, unsafe_allow_html=True)
 

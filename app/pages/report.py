@@ -134,7 +134,7 @@ def show():
                 logger.info(f"PDF report generated: {filename}")
                 
                 # Success message
-                st.balloons()
+                st.success(f"Report generated successfully: {file_path}")
                 st.info(f"✅ Report saved as: **{filename}**")
             
             except Exception as e:
