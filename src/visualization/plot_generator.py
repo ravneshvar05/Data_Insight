@@ -86,7 +86,7 @@ class PlotGenerator:
         """Create bar chart for categorical data."""
         col = columns[0]
         
-        # Get value counts
+        # Get value counts (implicitly aggregates, so no sampling needed)
         value_counts = self.df[col].value_counts().head(20)  # Limit to top 20
         
         fig = go.Figure(data=[
@@ -98,7 +98,7 @@ class PlotGenerator:
         ])
         
         fig.update_layout(
-            title=f'Distribution of {col}',
+            title=f'Distribution of {col} (Top 20)',
             xaxis_title=col,
             yaxis_title='Count',
             annotations=[{
@@ -119,9 +119,14 @@ class PlotGenerator:
         """Create line chart for trend analysis."""
         fig = go.Figure()
         
+        # Use WebGL (Scattergl) if dataset is large (>5000 rows)
+        # This allows rendering all data points without browser hanging
+        use_webgl = len(self.df) > 5000
+        ScatterClass = go.Scattergl if use_webgl else go.Scatter
+        
         if len(columns) == 1:
             # Single line - use index as x-axis
-            fig.add_trace(go.Scatter(
+            fig.add_trace(ScatterClass(
                 x=self.df.index,
                 y=self.df[columns[0]],
                 mode='lines',
@@ -131,9 +136,12 @@ class PlotGenerator:
             x_title = 'Index'
         else:
             # Two columns - first as x, second as y
-            fig.add_trace(go.Scatter(
-                x=self.df[columns[0]],
-                y=self.df[columns[1]],
+            # Sort by x axis to prevent messy lines
+            df_plot = self.df.sort_values(by=columns[0]) if pd.api.types.is_numeric_dtype(self.df[columns[0]]) else self.df
+                
+            fig.add_trace(ScatterClass(
+                x=df_plot[columns[0]],
+                y=df_plot[columns[1]],
                 mode='lines',
                 name=columns[1],
                 line=dict(color=self.color_palette[0])
@@ -161,6 +169,10 @@ class PlotGenerator:
     def _create_histogram(self, columns: List[str], reason: str) -> go.Figure:
         """Create histogram for distribution analysis."""
         col = columns[0]
+        
+        # Histogram aggregates data into bins, so we can send all data
+        # unless it's extremely large (>500k), in which case we might need server-side binning.
+        # For 80k rows, client-side binning is fine.
         
         fig = go.Figure(data=[
             go.Histogram(
@@ -227,26 +239,31 @@ class PlotGenerator:
         # Clean data - remove rows with NaN in either column
         clean_df = self.df[[x_col, y_col]].dropna()
         
+        # Use WebGL (Scattergl) if dataset is large
+        use_webgl = len(clean_df) > 5000
+        ScatterClass = go.Scattergl if use_webgl else go.Scatter
+        
         fig = go.Figure(data=[
-            go.Scatter(
+            ScatterClass(
                 x=clean_df[x_col],
                 y=clean_df[y_col],
                 mode='markers',
                 marker=dict(
                     color=self.color_palette[0],
-                    size=8,
+                    size=6,
                     opacity=0.6
                 )
             )
         ])
         
-        # Add trendline
+        # Add trendline (calculate on full data)
         try:
             import numpy as np
             z = np.polyfit(clean_df[x_col], clean_df[y_col], 1)
             p = np.poly1d(z)
             x_trend = np.linspace(clean_df[x_col].min(), clean_df[x_col].max(), 100)
             
+            # Trendline is simple (100 points), so standard Scatter is fine
             fig.add_trace(go.Scatter(
                 x=x_trend,
                 y=p(x_trend),
@@ -286,7 +303,7 @@ class PlotGenerator:
         if len(numeric_cols) < 2:
             return self._create_histogram(columns, "Not enough numeric columns for heatmap")
         
-        # Compute correlation matrix
+        # Compute correlation matrix (always fast as it aggregates)
         corr_matrix = self.df[numeric_cols].corr()
         
         fig = go.Figure(data=go.Heatmap(
