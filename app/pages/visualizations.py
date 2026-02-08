@@ -35,18 +35,29 @@ def show():
     
     # Generate visualizations if not already done
     if not st.session_state.visualizations:
+        # User control for number of plots
+        st.markdown("### ⚙️ Visualization Settings")
+        num_plots = st.slider(
+            "Number of plots to generate",
+            min_value=5,
+            max_value=15,
+            value=8,
+            help="Select how many business-focused visualizations you want to generate"
+        )
+        st.markdown("---")
+        
         if st.button("🎨 Generate AI-Powered Visualizations", type="primary"):
             with st.spinner("Planning and generating visualizations... This may take a moment."):
                 try:
                     config = get_config()
                     
-                    # Plan visualizations using LLM
+                    # Plan visualizations using LLM with user-specified count
                     planner = VisualizationPlanner(
                         st.session_state.df,
                         st.session_state.profile_results,
                         config.all
                     )
-                    plot_specs = planner.plan_visualizations()
+                    plot_specs = planner.plan_visualizations(num_plots=num_plots)
                     
                     # Generate plots
                     generator = PlotGenerator(st.session_state.df, config.all)

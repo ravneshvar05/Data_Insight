@@ -155,7 +155,8 @@ class GroqClient:
         schema: Dict[str, Any],
         correlations: list,
         sample_data: str,
-        id_columns: list
+        id_columns: list,
+        num_plots: int = 8
     ) -> Dict[str, Any]:
         """
         Generate visualization plan using LLM.
@@ -165,11 +166,12 @@ class GroqClient:
             correlations: List of strong correlations
             sample_data: Sample rows as string
             id_columns: List of ID columns to exclude
+            num_plots: Number of plots to recommend
             
         Returns:
             Visualization plan dictionary
         """
-        prompt = self._build_visualization_prompt(schema, correlations, sample_data, id_columns)
+        prompt = self._build_visualization_prompt(schema, correlations, sample_data, id_columns, num_plots)
         
         result = self.generate(
             prompt=prompt,
@@ -213,22 +215,21 @@ class GroqClient:
         schema: Dict[str, Any],
         correlations: list,
         sample_data: str,
-        id_columns: list
+        id_columns: list,
+        num_plots: int = 8
     ) -> str:
         """Build prompt for visualization planning."""
         
         id_columns_str = ', '.join(id_columns) if id_columns else 'None'
         correlations_str = json.dumps(correlations[:10], indent=2) if correlations else 'No strong correlations found'
         
-        prompt = f"""You are a data visualization expert. Based on the dataset schema and statistics, recommend 5-8 business-relevant visualizations.
+        prompt = f"""You are a BUSINESS ANALYST and data visualization expert. Your goal is to understand the BUSINESS CONTEXT of this dataset and recommend visualizations that provide ACTIONABLE BUSINESS INSIGHTS.
 
-STRICT RULES:
-1. EXCLUDE these ID/index columns: {id_columns_str}
-2. Focus on business insights, not technical metadata
-3. Prefer: trends, distributions, comparisons, contributions, correlations
-4. Each plot must have a clear business purpose
-5. Use maximum 2 columns per plot
-6. Recommend between 5 and 8 plots total
+FIRST, analyze the dataset to understand:
+1. What BUSINESS is this data about? (e.g., Sales, Marketing, Operations, Finance)
+2. What are the KEY METRICS? (e.g., Sales, Revenue, Profit, Cost, Quantity)
+3. What are the DIMENSIONS? (e.g., Brand, Product, Category, Region, Customer)
+4. Is there TIME data? (e.g., Date, Month, Year for trends)
 
 Dataset Schema:
 {json.dumps(schema, indent=2)}
@@ -239,24 +240,57 @@ Strong Correlations:
 Sample Data (first 3 rows):
 {sample_data}
 
+STRICT RULES FOR BUSINESS-FOCUSED VISUALIZATIONS:
+1. ❌ NEVER use ID/index columns: {id_columns_str}
+2. ❌ NEVER create plots with ONLY ONE CATEGORY (e.g., if Brand has only "Nike", skip "Sales by Brand")
+3. ✅ PRIORITIZE these business-critical plot types:
+   - **Sales/Revenue/Profit by Brand** (if Brand column exists and has multiple values)
+   - **Sales/Revenue/Profit by Category/SubCategory** (if Category columns exist with multiple values)
+   - **Sales/Revenue/Profit over Time** (LINE charts for trends if Date/Time columns exist)
+   - **Metric comparisons** (e.g., Cost vs Price, Sales vs Inventory)
+4. ✅ ALWAYS prefer LINE charts for time-based trends
+5. ✅ ALWAYS prefer BAR charts for categorical comparisons (Brand, Category, Region)
+6. ✅ Only suggest SCATTER plots for meaningful correlations (not for unrelated metrics)
+7. ✅ Avoid HISTOGRAM and BOX plots unless specifically valuable for outlier detection
+
+BUSINESS VISUALIZATION PRIORITIES (in order):
+Priority 1: KEY METRIC by BRAND/CATEGORY (Bar charts)
+Priority 2: KEY METRIC over TIME (Line charts for trends)
+Priority 3: METRIC COMPARISONS (Bar/Scatter for related metrics)
+Priority 4: DISTRIBUTIONS (only if business-relevant)
+
+Return EXACTLY {num_plots} plots that a BUSINESS USER would actually want to see to make decisions.
+
 Return ONLY valid JSON in this exact format (no other text):
 {{
   "plots": [
     {{
       "plot_type": "bar|line|hist|box|scatter|heatmap",
       "columns": ["col1"] or ["col1", "col2"],
-      "business_reason": "concise explanation of business value"
+      "business_reason": "Why this plot provides actionable business insight"
     }}
   ]
 }}
 
-Ensure:
-- bar: for categorical comparisons
-- line: for trends over time or sequences
-- hist: for distribution of numeric values
-- box: for outlier detection and distribution comparison
-- scatter: for correlation between two numeric variables
-- heatmap: for correlation matrix visualization
+Plot Types:
+- bar: for categorical comparisons (Sales by Brand, Revenue by Region)
+- line: for trends over time (Sales over Date, Profit over Month)
+- scatter: ONLY for meaningful metric correlations
+- hist/box: ONLY for outlier detection if business-relevant
+- heatmap: for correlation matrix of multiple metrics
+
+EXAMPLES OF GOOD PLOTS (if those columns exist):
+✅ "Sales by Brand" (bar chart comparing brands)
+✅ "Revenue by SubCategory" (bar chart comparing subcategories)
+✅ "Sales over Date" (line chart showing trend)
+✅ "Profit over Month" (line chart showing trend)
+✅ "Cost vs Price by Product" (meaningful comparison)
+
+EXAMPLES OF BAD PLOTS TO AVOID:
+❌ "Sales distribution" (histogram - unless outliers matter)
+❌ "ProductId analysis" (ID column - no business value)
+❌ "Single brand comparison" (only 1 unique value)
+❌ "Unrelated scatter" (Sales vs AvgCPC - not meaningful)
 """
         
         return prompt

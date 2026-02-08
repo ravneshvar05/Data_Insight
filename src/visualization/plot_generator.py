@@ -84,34 +84,81 @@ class PlotGenerator:
     
     def _create_bar_chart(self, columns: List[str], reason: str) -> go.Figure:
         """Create bar chart for categorical data."""
-        col = columns[0]
         
-        # Get value counts (implicitly aggregates, so no sampling needed)
-        value_counts = self.df[col].value_counts().head(20)  # Limit to top 20
-        
-        fig = go.Figure(data=[
-            go.Bar(
-                x=value_counts.index.astype(str),
-                y=value_counts.values,
-                marker_color=self.color_palette[0]
+        if len(columns) == 1:
+            # Single column - count distribution
+            col = columns[0]
+            value_counts = self.df[col].value_counts().head(20)  # Limit to top 20
+            
+            fig = go.Figure(data=[
+                go.Bar(
+                    x=value_counts.index.astype(str),
+                    y=value_counts.values,
+                    marker_color=self.color_palette[0]
+                )
+            ])
+            
+            fig.update_layout(
+                title=f'Distribution of {col} (Top 20)',
+                xaxis_title=col,
+                yaxis_title='Count',
+                annotations=[{
+                    'text': reason,
+                    'xref': 'paper',
+                    'yref': 'paper',
+                    'x': 0.5,
+                    'y': -0.15,
+                    'showarrow': False,
+                    'font': {'size': 10, 'color': 'gray'},
+                    'xanchor': 'center'
+                }]
             )
-        ])
-        
-        fig.update_layout(
-            title=f'Distribution of {col} (Top 20)',
-            xaxis_title=col,
-            yaxis_title='Count',
-            annotations=[{
-                'text': reason,
-                'xref': 'paper',
-                'yref': 'paper',
-                'x': 0.5,
-                'y': -0.15,
-                'showarrow': False,
-                'font': {'size': 10, 'color': 'gray'},
-                'xanchor': 'center'
-            }]
-        )
+        else:
+            # Two columns - CRITICAL: Detect which is category and which is metric
+            col1, col2 = columns[0], columns[1]
+            
+            # Determine which is categorical and which is numeric
+            col1_is_numeric = pd.api.types.is_numeric_dtype(self.df[col1])
+            col2_is_numeric = pd.api.types.is_numeric_dtype(self.df[col2])
+            col1_nunique = self.df[col1].nunique()
+            col2_nunique = self.df[col2].nunique()
+            
+            # Logic: Category column has fewer unique values OR is non-numeric
+            if (not col1_is_numeric) or (col1_is_numeric and col2_is_numeric and col1_nunique < col2_nunique):
+                # col1 is category, col2 is metric
+                category_col = col1
+                metric_col = col2
+            else:
+                # col2 is category, col1 is metric
+                category_col = col2
+                metric_col = col1
+            
+            # Aggregate metric by category (sum)
+            aggregated = self.df.groupby(category_col)[metric_col].sum().sort_values(ascending=False).head(20)
+            
+            fig = go.Figure(data=[
+                go.Bar(
+                    x=aggregated.index.astype(str),
+                    y=aggregated.values,
+                    marker_color=self.color_palette[0]
+                )
+            ])
+            
+            fig.update_layout(
+                title=f'{metric_col} by {category_col} (Top 20)',
+                xaxis_title=category_col,
+                yaxis_title=f'Total {metric_col}',
+                annotations=[{
+                    'text': reason,
+                    'xref': 'paper',
+                    'yref': 'paper',
+                    'x': 0.5,
+                    'y': -0.15,
+                    'showarrow': False,
+                    'font': {'size': 10, 'color': 'gray'},
+                    'xanchor': 'center'
+                }]
+            )
         
         return fig
     
@@ -134,22 +181,99 @@ class PlotGenerator:
                 line=dict(color=self.color_palette[0])
             ))
             x_title = 'Index'
+            title = f'{columns[0]} Trend'
         else:
-            # Two columns - first as x, second as y
-            # Sort by x axis to prevent messy lines
-            df_plot = self.df.sort_values(by=columns[0]) if pd.api.types.is_numeric_dtype(self.df[columns[0]]) else self.df
+            # Two columns - intelligently determine X (Date) and Y (Metric)
+            col1, col2 = columns[0], columns[1]
+            
+            # Helper to check if a column looks like a date
+            def is_potential_date(series):
+                if pd.api.types.is_datetime64_any_dtype(series):
+                    return True
+                if pd.api.types.is_object_dtype(series):
+                    # Check first non-null value
+                    val = series.dropna().iloc[0] if not series.dropna().empty else ""
+                    return isinstance(val, str) and (val.count('-') >= 2 or val.count('/') >= 2)
+                return False
+
+            # Determine X and Y axes
+            # We want Date on X-axis and Metric on Y-axis
+            col1_is_date = is_potential_date(self.df[col1])
+            col2_is_date = is_potential_date(self.df[col2])
+            
+            if col1_is_date and not col2_is_date:
+                x_col, y_col = col1, col2
+            elif col2_is_date and not col1_is_date:
+                x_col, y_col = col2, col1
+            else:
+                # Fallback: simple assignment or heuristic
+                # If neither or both are dates, assume first is X
+                x_col, y_col = col1, col2
+            
+            # SMART TIME AGGREGATION: Check if x-axis is datetime
+            df_plot = self.df.copy()
+            
+            # Try to detect and parse datetime column
+            if pd.api.types.is_object_dtype(df_plot[x_col]):
+                try:
+                    # Try with dayfirst=True for international formats (DD-MM-YYYY)
+                    df_plot[x_col] = pd.to_datetime(df_plot[x_col], dayfirst=True, errors='coerce')
+                except:
+                    # Fallback to default
+                    try:
+                        df_plot[x_col] = pd.to_datetime(df_plot[x_col], errors='coerce')
+                    except:
+                        pass
+            
+            # Check if we successfully converted to datetime
+            is_datetime = pd.api.types.is_datetime64_any_dtype(df_plot[x_col])
+            
+            # Aggregate by month if datetime detected
+            if is_datetime:
+                # Remove NaT values
+                df_plot = df_plot.dropna(subset=[x_col])
                 
-            fig.add_trace(ScatterClass(
-                x=df_plot[columns[0]],
-                y=df_plot[columns[1]],
-                mode='lines',
-                name=columns[1],
-                line=dict(color=self.color_palette[0])
-            ))
-            x_title = columns[0]
+                if not df_plot.empty:
+                    # Create month column
+                    df_plot['_month'] = df_plot[x_col].dt.to_period('M')
+                    
+                    # Aggregate by month (sum for metrics)
+                    monthly_data = df_plot.groupby('_month')[y_col].sum().reset_index()
+                    monthly_data['_month'] = monthly_data['_month'].dt.to_timestamp()
+                    
+                    fig.add_trace(ScatterClass(
+                        x=monthly_data['_month'],
+                        y=monthly_data[y_col],
+                        mode='lines+markers',
+                        name=y_col,
+                        line=dict(color=self.color_palette[0], width=2),
+                        marker=dict(size=6)
+                    ))
+                    x_title = f'{x_col} (Monthly)'
+                    title = f'{y_col} over {x_col} (Monthly Trend)'
+                    
+                    logger.info(f"Aggregated {len(df_plot)} daily records to {len(monthly_data)} monthly points")
+                else:
+                    is_datetime = False
+            
+            if not is_datetime:
+                # If NOT datetime (or parsing failed), plot generic line chart
+                # Sort by x axis to prevent messy lines (for numeric data)
+                if pd.api.types.is_numeric_dtype(df_plot[x_col]):
+                    df_plot = df_plot.sort_values(by=x_col)
+                
+                fig.add_trace(ScatterClass(
+                    x=df_plot[x_col],
+                    y=df_plot[y_col],
+                    mode='lines',
+                    name=y_col,
+                    line=dict(color=self.color_palette[0])
+                ))
+                x_title = x_col
+                title = f'{y_col} over {x_col}'
         
         fig.update_layout(
-            title=f'Trend: {", ".join(columns)}',
+            title=title,
             xaxis_title=x_title,
             yaxis_title=columns[-1],
             annotations=[{
