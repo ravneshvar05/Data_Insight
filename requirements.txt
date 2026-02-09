@@ -25,3 +25,4 @@ Pillow==10.2.0
 
 # Utilities
 python-dateutil==2.8.2
+kaleido==0.2.1

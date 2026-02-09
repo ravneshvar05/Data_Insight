@@ -190,8 +190,17 @@ st.markdown("""
        ------------------------------------------------------------------------- */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    header {visibility: hidden;}
+    
+    /* Hide the decoration line (rainbow) but keep the header visible so we can invoke the sidebar */
+    [data-testid="stDecoration"] {display: none;}
+    
+    /* Hide the deploy button specifically */
     [data-testid="stDeployButton"] {display: none;}
+    
+    /* Optional: Hide the burger menu if we want to be strict, but keeping it usually helps for dev. 
+       If we want to hide it: [data-testid="stToolbar"] {visibility: hidden;} 
+       BUT avoiding global header hide ensures the sidebar arrow (collapsedControl) works.
+    */
 </style>
 """, unsafe_allow_html=True)
 
