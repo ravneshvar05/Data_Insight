@@ -58,3 +58,6 @@ htmlcov/
 # Project specific
 *.pdf
 temp/
+# Ignore data files but allow the test dataset
+data/*.csv
+!data/movie_test_data.csv

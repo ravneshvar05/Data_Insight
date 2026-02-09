@@ -1,0 +1,501 @@
+Movie_ID,Title,Genre,Release_Date,Budget_USD,Revenue_USD,Director,Studio,Runtime_Minutes,IMDB_Rating,Votes
+MV-00000,Movie Title 0,Romance,04-04-2023,273000000.0,747157450,Greta Gerwig,Sony,168,8.4,48923
+MV-00001,Movie Title 1,Comedy,2010-01-07,248000000.0,771860351,Christopher Nolan,Paramount,141,6.1,25973
+MV-00002,Movie Title 2,Adventure,2007-02-18,200000000.0,0,James Cameron,Warner Bros,170,8.1,72806
+MV-00003,Movie Title 3,Comedy,2003-06-28,252000000.0,317644399,Martin Scorsese,Paramount,127,5.6,26276
+MV-00004,Movie Title 4,Action,2004-04-26,84000000.0,0,Greta Gerwig,Warner Bros,89,7.3,93949
+MV-00005,Movie Title 5,Drama,2023-10-28,117000000.0,0,Martin Scorsese,Warner Bros,140,4.0,46202
+MV-00006,Movie Title 6,Adventure,2008-11-06,124000000.0,266952593,Greta Gerwig,Indie,100,5.3,25867
+MV-00007,Movie Title 7,Action,2022-02-03,123000000.0,358235289,Greta Gerwig,Indie,126,2.0,62769
+MV-00008,Movie Title 8,Romance,2003-11-29,123000000.0,71334847,Christopher Nolan,Paramount,177,4.2,10008
+MV-00009,Movie Title 9,Drama,2004-02-07,127000000.0,269436298,Christopher Nolan,Paramount,174,1.3,21096
+MV-00010,Movie Title 10,Comedy,12-09-2009,9000000.0,9098442,Greta Gerwig,Warner Bros,144,7.5,14739
+MV-00011,Movie Title 11,Comedy,2018-07-14,199000000.0,841809313,Greta Gerwig,Paramount,135,7.5,41199
+MV-00012,Movie Title 12,Documentary,2010-08-16,279000000.0,1278213486,Unknown Director,Paramount,174,6.5,20496
+MV-00013,Movie Title 13,Action,2020-10-01,292000000.0,215754773,Greta Gerwig,Paramount,151,1.4,63813
+MV-00014,Movie Title 14,Horror,2007-05-09,99000000.0,0,Christopher Nolan,Indie,124,8.0,87554
+MV-00015,Movie Title 15,Horror,2016/11/20,212000000.0,0,Christopher Nolan,Warner Bros,138,3.0,18470
+MV-00016,Movie Title 16,Adventure,2017-01-13,55000000.0,91964533,Martin Scorsese,Sony,166,9.9,9056
+MV-00017,Movie Title 17,Action,2003-08-13,1000000.0,1149448,Christopher Nolan,Disney,103,8.4,29786
+MV-00018,Movie Title 18,Adventure,2006-04-14,192000000.0,616918614,Greta Gerwig,Indie,104,3.0,52733
+MV-00019,Movie Title 19,Action,2014-07-17,15000000.0,72223976,Greta Gerwig,Warner Bros,108,7.4,10233
+MV-00020,Movie Title 20,Adventure,20-08-2019,245000000.0,840449846,Greta Gerwig,Warner Bros,118,8.3,69789
+MV-00021,Movie Title 21,Romance,2022-03-30,75000000.0,51061144,Steven Spielberg,Indie,128,3.5,83894
+MV-00022,Movie Title 22,Horror,2008-11-02,294000000.0,150447044,James Cameron,Paramount,154,9.1,27811
+MV-00023,Movie Title 23,Romance,2010-10-16,213000000.0,750874105,Steven Spielberg,Warner Bros,131,3.3,89438
+MV-00024,Movie Title 24,Documentary,2008-03-16,111000000.0,546233333,Christopher Nolan,Sony,92,2.8,13441
+MV-00025,Movie Title 25,Action,2001-01-25,147000000.0,579101406,Greta Gerwig,Indie,147,2.4,26838
+MV-00026,Movie Title 26,Drama,2014-01-30,68000000.0,246030002,Christopher Nolan,Universal,167,5.7,66009
+MV-00027,Movie Title 27,Sci-Fi,2008-02-22,118000000.0,514969594,Martin Scorsese,Disney,177,5.1,35116
+MV-00028,Movie Title 28,Drama,2013-05-18,283000000.0,916290126,James Cameron,Indie,148,8.8,61304
+MV-00029,Movie Title 29,Horror,2016-09-07,240000000.0,1000914530,Christopher Nolan,Universal,162,9.8,5878
+MV-00030,Movie Title 30,Horror,07-07-2004,14000000.0,0,Quentin Tarantino,Disney,123,2.8,82734
+MV-00031,Movie Title 31,Action,2001-10-21,6000000.0,9245224,Quentin Tarantino,Indie,113,6.3,81179
+MV-00032,Movie Title 32,Sci-Fi,2006-06-16,,0,Unknown Director,Paramount,153,6.4,97271
+MV-00033,Movie Title 33,Comedy,2009-02-25,164000000.0,242391222,Unknown Director,Sony,84,4.1,44722
+MV-00034,Movie Title 34,Comedy,2008-03-09,114000000.0,458900524,Christopher Nolan,Paramount,147,3.7,95806
+MV-00035,Movie Title 35,Romance,2003-08-10,1000000.0,4771410,Greta Gerwig,Paramount,144,1.6,73686
+MV-00036,Movie Title 36,Romance,2022-02-22,22000000.0,43406219,James Cameron,Universal,132,5.3,21017
+MV-00037,Movie Title 37,Documentary,2017-03-02,211000000.0,664558309,Martin Scorsese,Disney,107,7.4,20586
+MV-00038,Movie Title 38,Horror,2017-12-11,14000000.0,23918155,Christopher Nolan,Universal,91,9.8,13782
+MV-00039,Movie Title 39,Horror,2001-03-02,112000000.0,342316621,Steven Spielberg,Indie,168,10.0,31159
+MV-00040,Movie Title 40,Drama,24-10-2020,97000000.0,132215148,,Sony,97,4.3,84761
+MV-00041,Movie Title 41,Adventure,2023-07-26,9000000.0,36723440,Unknown Director,Indie,143,4.9,35524
+MV-00042,Movie Title 42,Drama,2012-06-07,29000000.0,124981670,Greta Gerwig,Universal,165,1.8,65716
+MV-00043,Movie Title 43,Horror,2009-11-21,280000000.0,157951493,Greta Gerwig,Indie,147,7.5,48842
+MV-00044,Movie Title 44,Comedy,2021-10-29,261000000.0,843732566,Greta Gerwig,Disney,161,2.5,25581
+MV-00045,Movie Title 45,Action,2008/10/07,286000000.0,426402781,Greta Gerwig,Disney,170,6.6,13202
+MV-00046,Movie Title 46,Adventure,2015-10-09,85000000.0,201611301,Christopher Nolan,Sony,154,5.9,7790
+MV-00047,Movie Title 47,Documentary,2010-12-03,,88460103,Steven Spielberg,Paramount,107,8.6,29581
+MV-00048,Movie Title 48,Romance,2009-05-30,183000000.0,367746173,Unknown Director,Universal,108,5.8,85320
+MV-00049,Movie Title 49,Sci-Fi,2007-09-12,274000000.0,239197396,,Paramount,138,3.2,91971
+MV-00050,Movie Title 50,Romance,12-02-2005,267000000.0,0,James Cameron,Indie,163,4.9,10780
+MV-00051,Movie Title 51,Action,2003-08-16,102000000.0,273806613,James Cameron,Paramount,95,2.5,58176
+MV-00052,Movie Title 52,Sci-Fi,2011-10-16,209000000.0,297785812,Greta Gerwig,Universal,164,8.3,10875
+MV-00053,Movie Title 53,Comedy,2017-08-01,167000000.0,347137982,Unknown Director,Sony,176,1.9,70014
+MV-00054,Movie Title 54,Horror,2005-10-02,283000000.0,288069569,Quentin Tarantino,Indie,142,2.7,90269
+MV-00055,Movie Title 55,Horror,2008-03-26,258000000.0,270652277,Quentin Tarantino,Paramount,98,7.3,58174
+MV-00056,Movie Title 56,Sci-Fi,2000-04-30,72000000.0,338432797,Greta Gerwig,Paramount,166,3.1,41468
+MV-00057,Movie Title 57,Horror,2017-10-11,17000000.0,36489476,Unknown Director,Paramount,102,10.0,23338
+MV-00058,Movie Title 58,Sci-Fi,2020-04-07,15000000.0,46768426,Steven Spielberg,Paramount,95,5.1,66221
+MV-00059,Movie Title 59,Documentary,2015-04-17,55000000.0,142702447,Christopher Nolan,Disney,127,9.5,69515
+MV-00060,Movie Title 60,Sci-Fi,31-07-2008,1000000.0,1241902,Quentin Tarantino,Warner Bros,174,5.6,29945
+MV-00061,Movie Title 61,Documentary,2022-05-22,260000000.0,448194175,Quentin Tarantino,Warner Bros,132,1.6,21783
+MV-00062,Movie Title 62,Sci-Fi,2009-06-06,116000000.0,144196266,Christopher Nolan,Universal,104,8.1,88519
+MV-00063,Movie Title 63,Adventure,2005-03-14,39000000.0,94124335,Christopher Nolan,Disney,94,7.8,40462
+MV-00064,Movie Title 64,Action,2006-11-26,67000000.0,0,Steven Spielberg,Paramount,136,6.2,48038
+MV-00065,Movie Title 65,Romance,2022-04-24,218000000.0,966390912,Greta Gerwig,Paramount,105,7.8,43972
+MV-00066,Movie Title 66,Adventure,2018-01-10,4000000.0,19795814,Quentin Tarantino,Warner Bros,169,5.7,11363
+MV-00067,Movie Title 67,Horror,2015-09-28,266000000.0,1113655362,Steven Spielberg,Indie,124,1.4,83468
+MV-00068,Movie Title 68,Adventure,2012-09-25,244000000.0,0,Steven Spielberg,Warner Bros,126,7.9,21671
+MV-00069,Movie Title 69,Comedy,2000-02-20,262000000.0,992913828,James Cameron,Paramount,130,2.1,95228
+MV-00070,Movie Title 70,Comedy,03-04-2021,149000000.0,260355405,Unknown Director,Disney,149,7.5,19468
+MV-00071,Movie Title 71,Horror,2010-05-25,28000000.0,48386119,Martin Scorsese,Indie,178,4.7,94330
+MV-00072,Movie Title 72,Sci-Fi,2007-06-27,270000000.0,958208181,Christopher Nolan,Sony,86,7.0,14957
+MV-00073,Movie Title 73,Adventure,2013-03-20,214000000.0,251709549,Unknown Director,Warner Bros,80,8.8,56574
+MV-00074,Movie Title 74,Romance,2019-10-22,35000000.0,161676829,Christopher Nolan,Universal,130,1.6,15335
+MV-00075,Movie Title 75,Drama,2014/03/12,55000000.0,207477444,Greta Gerwig,Universal,88,5.7,95710
+MV-00076,Movie Title 76,Drama,2010-06-03,271000000.0,882332732,Martin Scorsese,Warner Bros,179,1.6,8289
+MV-00077,Movie Title 77,Drama,2003-08-21,176000000.0,847626854,Christopher Nolan,Disney,111,1.2,95711
+MV-00078,Movie Title 78,Drama,2000-06-26,79000000.0,108428288,Martin Scorsese,Disney,96,3.2,75544
+MV-00079,Movie Title 79,Documentary,2002-11-15,143000000.0,704942171,Christopher Nolan,Sony,87,6.2,65008
+MV-00080,Movie Title 80,Action,19-06-2005,191000000.0,596607330,Steven Spielberg,Indie,176,2.4,78845
+MV-00081,Movie Title 81,Sci-Fi,2021-07-20,260000000.0,151717268,Martin Scorsese,Paramount,155,8.0,6521
+MV-00082,Movie Title 82,Romance,2011-09-16,44000000.0,189818462,Unknown Director,Disney,131,4.0,38711
+MV-00083,Movie Title 83,Adventure,2007-03-05,117000000.0,430551054,Greta Gerwig,Indie,85,9.1,1584
+MV-00084,Movie Title 84,Action,2005-12-20,222000000.0,0,,Universal,154,8.8,14915
+MV-00085,Movie Title 85,Adventure,2016-04-09,112000000.0,312651590,Greta Gerwig,Universal,152,9.9,43026
+MV-00086,Movie Title 86,Adventure,2018-08-20,4000000.0,19168412,James Cameron,Paramount,102,4.3,72404
+MV-00087,Movie Title 87,Drama,2016-07-05,258000000.0,918849546,Greta Gerwig,Sony,132,9.1,36771
+MV-00088,Movie Title 88,Drama,2013-11-26,139000000.0,88908537,Christopher Nolan,Sony,135,2.0,2985
+MV-00089,Movie Title 89,Adventure,2013-02-25,219000000.0,426085615,James Cameron,Warner Bros,116,2.1,81622
+MV-00090,Movie Title 90,Drama,24-12-2018,107000000.0,116374486,Martin Scorsese,Paramount,170,6.0,25351
+MV-00091,Movie Title 91,Sci-Fi,2018-03-07,90000000.0,405488475,Greta Gerwig,Warner Bros,96,5.1,46672
+MV-00092,Movie Title 92,Documentary,2020-07-20,133000000.0,247601024,Steven Spielberg,Paramount,148,4.9,88603
+MV-00093,Movie Title 93,Documentary,2000-07-17,55000000.0,270577797,Greta Gerwig,Universal,89,3.2,71531
+MV-00094,Movie Title 94,Horror,2007-05-25,,116299089,Christopher Nolan,Disney,95,6.8,88460
+MV-00095,Movie Title 95,Adventure,2009-12-10,237000000.0,727387139,Christopher Nolan,Universal,119,6.8,7931
+MV-00096,Movie Title 96,Action,2017-09-15,204000000.0,657408256,Steven Spielberg,Paramount,172,6.5,55019
+MV-00097,Movie Title 97,Action,2023-08-01,138000000.0,177586660,Unknown Director,Sony,171,4.4,53775
+MV-00098,Movie Title 98,Sci-Fi,2008-01-21,269000000.0,269228016,James Cameron,Paramount,180,8.2,79249
+MV-00099,Movie Title 99,Horror,2003-08-07,197000000.0,364916813,James Cameron,Indie,135,4.4,44196
+MV-00100,Movie Title 100,Comedy,25-03-2005,172000000.0,558612648,Quentin Tarantino,Disney,108,3.6,11731
+MV-00101,Movie Title 101,Documentary,2013-10-11,168000000.0,827768986,James Cameron,Warner Bros,120,9.5,16408
+MV-00102,Movie Title 102,Romance,2001-07-09,207000000.0,647981087,James Cameron,Warner Bros,125,4.4,48129
+MV-00103,Movie Title 103,Drama,2001-05-27,236000000.0,149224640,Christopher Nolan,Universal,180,6.3,24576
+MV-00104,Movie Title 104,Action,2020-01-09,299000000.0,0,Quentin Tarantino,Paramount,152,7.4,76309
+MV-00105,Movie Title 105,Adventure,2010/04/15,282000000.0,836117163,Unknown Director,Warner Bros,140,2.5,55157
+MV-00106,Movie Title 106,Romance,2001-06-04,143000000.0,241278119,Steven Spielberg,Disney,110,3.1,91532
+MV-00107,Movie Title 107,Documentary,2007-07-21,245000000.0,272606640,Unknown Director,Indie,121,8.6,88695
+MV-00108,Movie Title 108,Sci-Fi,2004-04-06,62000000.0,248789357,Steven Spielberg,Universal,140,9.4,16191
+MV-00109,Movie Title 109,Sci-Fi,2021-08-15,194000000.0,859415316,Unknown Director,Indie,141,1.4,36460
+MV-00110,Movie Title 110,Drama,25-10-2015,215000000.0,641875518,Greta Gerwig,Universal,103,8.5,25514
+MV-00111,Movie Title 111,Documentary,2011-12-12,94000000.0,188466560,James Cameron,Disney,163,5.0,98460
+MV-00112,Movie Title 112,Comedy,2015-05-26,197000000.0,113542995,Unknown Director,Universal,180,2.9,43677
+MV-00113,Movie Title 113,Drama,2018-10-04,151000000.0,653988668,Martin Scorsese,Sony,108,9.4,70655
+MV-00114,Movie Title 114,Horror,2003-04-08,112000000.0,0,Martin Scorsese,Disney,173,2.6,22334
+MV-00115,Movie Title 115,Sci-Fi,2004-03-23,172000000.0,657513835,Greta Gerwig,Paramount,125,9.9,33160
+MV-00116,Movie Title 116,Horror,2013-07-13,180000000.0,593816676,Quentin Tarantino,Sony,170,6.4,60338
+MV-00117,Movie Title 117,Sci-Fi,2007-04-27,165000000.0,248254941,Greta Gerwig,Indie,96,3.2,22666
+MV-00118,Movie Title 118,Romance,2011-01-17,203000000.0,0,Steven Spielberg,Paramount,143,9.4,21574
+MV-00119,Movie Title 119,Comedy,2023-11-12,114000000.0,0,Greta Gerwig,Sony,126,9.4,73492
+MV-00120,Movie Title 120,Documentary,12-05-2007,299000000.0,369343673,Christopher Nolan,Paramount,117,2.3,20474
+MV-00121,Movie Title 121,Horror,2021-05-06,116000000.0,484200910,Quentin Tarantino,Warner Bros,174,7.7,89813
+MV-00122,Movie Title 122,Romance,2012-12-15,170000000.0,558219849,Greta Gerwig,Paramount,166,4.8,97076
+MV-00123,Movie Title 123,Adventure,2014-07-05,213000000.0,278391930,Quentin Tarantino,Paramount,152,6.1,74995
+MV-00124,Movie Title 124,Adventure,2009-03-08,232000000.0,346584541,Quentin Tarantino,Paramount,163,8.8,82169
+MV-00125,Movie Title 125,Adventure,2001-02-02,131000000.0,528790704,James Cameron,Indie,180,1.2,69115
+MV-00126,Movie Title 126,Sci-Fi,2007-04-21,128000000.0,111243664,Christopher Nolan,Universal,164,2.2,99596
+MV-00127,Movie Title 127,Comedy,2010-05-11,72000000.0,175090080,Steven Spielberg,Indie,161,4.9,24239
+MV-00128,Movie Title 128,Romance,2019-09-16,203000000.0,0,Quentin Tarantino,Sony,111,4.5,69244
+MV-00129,Movie Title 129,Action,2011-08-27,190000000.0,850496912,Martin Scorsese,Warner Bros,92,9.3,57282
+MV-00130,Movie Title 130,Sci-Fi,02-10-2004,132000000.0,269758438,Christopher Nolan,Universal,170,7.1,31738
+MV-00131,Movie Title 131,Documentary,2002-02-03,241000000.0,322992466,Quentin Tarantino,Sony,151,7.8,54225
+MV-00132,Movie Title 132,Sci-Fi,2002-03-27,14000000.0,11316252,Martin Scorsese,Sony,107,7.1,17117
+MV-00133,Movie Title 133,Action,2008-09-09,109000000.0,428228340,,Sony,83,2.1,82948
+MV-00134,Movie Title 134,Horror,2004-01-04,81000000.0,0,Martin Scorsese,Universal,163,6.4,94827
+MV-00135,Movie Title 135,Adventure,2023/11/23,205000000.0,106374744,James Cameron,Sony,107,4.1,28257
+MV-00136,Movie Title 136,Action,2015-07-20,141000000.0,182269288,Martin Scorsese,Indie,106,3.3,50060
+MV-00137,Movie Title 137,Comedy,2006-03-23,165000000.0,761485069,Quentin Tarantino,Indie,157,7.1,79581
+MV-00138,Movie Title 138,Romance,2022-02-10,3000000.0,7775989,James Cameron,Disney,166,6.4,81188
+MV-00139,Movie Title 139,Drama,2012-08-05,88000000.0,393157116,James Cameron,Sony,162,3.0,7466
+MV-00140,Movie Title 140,Adventure,03-04-2007,166000000.0,691148915,Greta Gerwig,Sony,82,4.4,11313
+MV-00141,Movie Title 141,Romance,2017-03-16,270000000.0,0,Martin Scorsese,Universal,153,5.7,94889
+MV-00142,Movie Title 142,Romance,2004-01-12,270000000.0,1305345692,James Cameron,Disney,115,4.6,79771
+MV-00143,Movie Title 143,Drama,2012-02-10,271000000.0,272856031,Unknown Director,Disney,122,6.0,23265
+MV-00144,Movie Title 144,Documentary,2011-07-09,82000000.0,134084814,Martin Scorsese,Disney,121,2.6,34395
+MV-00145,Movie Title 145,Romance,2000-09-19,261000000.0,405775801,James Cameron,Paramount,138,7.7,59665
+MV-00146,Movie Title 146,Comedy,2002-04-28,247000000.0,197670264,Quentin Tarantino,Indie,144,1.8,71073
+MV-00147,Movie Title 147,Adventure,2011-05-12,63000000.0,90658816,Quentin Tarantino,Sony,132,2.9,43126
+MV-00148,Movie Title 148,Documentary,2016-05-08,235000000.0,312758773,Unknown Director,Indie,159,8.1,22461
+MV-00149,Movie Title 149,Horror,2017-09-12,132000000.0,398923973,Christopher Nolan,Paramount,147,8.6,13870
+MV-00150,Movie Title 150,Adventure,29-05-2009,177000000.0,668569377,Quentin Tarantino,Sony,105,6.7,5976
+MV-00151,Movie Title 151,Sci-Fi,2002-09-15,1000000.0,885841,James Cameron,Indie,89,6.4,30587
+MV-00152,Movie Title 152,Comedy,2020-11-26,58000000.0,103167763,Steven Spielberg,Indie,134,5.6,77597
+MV-00153,Movie Title 153,Drama,2018-04-30,82000000.0,148724376,Greta Gerwig,Universal,140,2.0,41782
+MV-00154,Movie Title 154,Action,2012-10-03,277000000.0,467823794,Steven Spielberg,Disney,157,1.3,42563
+MV-00155,Movie Title 155,Adventure,2016-02-15,239000000.0,843041956,Christopher Nolan,Disney,119,5.4,73531
+MV-00156,Movie Title 156,Adventure,2001-04-24,35000000.0,158407548,Martin Scorsese,Disney,163,4.6,71646
+MV-00157,Movie Title 157,Action,2001-11-06,,11825956,Steven Spielberg,Sony,140,6.8,72681
+MV-00158,Movie Title 158,Romance,2012-09-08,,735463462,Greta Gerwig,Universal,125,7.2,49868
+MV-00159,Movie Title 159,Romance,2005-06-18,,250149977,Steven Spielberg,Indie,165,6.6,65869
+MV-00160,Movie Title 160,Drama,27-01-2023,156000000.0,474024497,Christopher Nolan,Universal,142,7.2,60191
+MV-00161,Movie Title 161,Sci-Fi,2014-09-10,230000000.0,480133403,Greta Gerwig,Paramount,113,8.8,49482
+MV-00162,Movie Title 162,Adventure,2002-07-05,167000000.0,0,Unknown Director,Universal,87,8.6,72057
+MV-00163,Movie Title 163,Comedy,2003-10-18,43000000.0,193136063,Unknown Director,Indie,83,9.1,73873
+MV-00164,Movie Title 164,Drama,2005-11-30,125000000.0,496577122,Christopher Nolan,Indie,149,5.9,22290
+MV-00165,Movie Title 165,Comedy,2015/06/09,60000000.0,76356523,Christopher Nolan,Warner Bros,164,2.5,53395
+MV-00166,Movie Title 166,Sci-Fi,2003-12-07,56000000.0,164043322,James Cameron,Disney,105,3.3,84376
+MV-00167,Movie Title 167,Horror,2001-06-19,78000000.0,192862858,James Cameron,Disney,113,7.8,76326
+MV-00168,Movie Title 168,Drama,2007-02-28,59000000.0,137933216,James Cameron,Paramount,170,7.2,56609
+MV-00169,Movie Title 169,Drama,2016-01-23,298000000.0,1055952098,Quentin Tarantino,Disney,99,2.0,77961
+MV-00170,Movie Title 170,Romance,30-10-2018,,388912103,Quentin Tarantino,Sony,97,9.3,59354
+MV-00171,Movie Title 171,Horror,2003-10-18,278000000.0,0,Quentin Tarantino,Universal,176,1.5,46076
+MV-00172,Movie Title 172,Drama,2020-05-12,43000000.0,158940437,James Cameron,Universal,122,9.8,66379
+MV-00173,Movie Title 173,Drama,2020-05-12,13000000.0,37903473,Quentin Tarantino,Universal,109,3.3,99944
+MV-00174,Movie Title 174,Comedy,2015-03-18,224000000.0,236866800,Christopher Nolan,Paramount,141,7.9,52881
+MV-00175,Movie Title 175,Horror,2017-09-01,64000000.0,110451358,Steven Spielberg,Universal,134,7.0,77596
+MV-00176,Movie Title 176,Horror,2001-12-26,101000000.0,330852817,James Cameron,Universal,91,2.3,47821
+MV-00177,Movie Title 177,Action,2002-03-12,176000000.0,710111938,Unknown Director,Disney,124,2.1,34294
+MV-00178,Movie Title 178,Comedy,2007-05-01,12000000.0,42877214,Martin Scorsese,Universal,120,5.8,17890
+MV-00179,Movie Title 179,Romance,2010-07-29,293000000.0,877123932,Quentin Tarantino,Paramount,87,8.1,23430
+MV-00180,Movie Title 180,Horror,09-02-2004,108000000.0,466263187,Unknown Director,Warner Bros,156,9.4,54555
+MV-00181,Movie Title 181,Drama,2006-05-30,6000000.0,4211860,Unknown Director,Indie,105,6.1,1121
+MV-00182,Movie Title 182,Comedy,2020-08-31,18000000.0,73464868,Unknown Director,Sony,102,1.4,84651
+MV-00183,Movie Title 183,Sci-Fi,2011-03-27,137000000.0,305407602,Christopher Nolan,Disney,137,9.1,94799
+MV-00184,Movie Title 184,Drama,2014-11-02,219000000.0,671690342,Quentin Tarantino,Disney,146,3.1,51832
+MV-00185,Movie Title 185,Comedy,2001-01-31,38000000.0,94664407,Martin Scorsese,Sony,119,9.9,69223
+MV-00186,Movie Title 186,Adventure,2013-06-24,115000000.0,435636533,Quentin Tarantino,Sony,171,4.8,46440
+MV-00187,Movie Title 187,Sci-Fi,2019-08-15,31000000.0,125578958,Quentin Tarantino,Warner Bros,139,2.0,33376
+MV-00188,Movie Title 188,Documentary,2011-04-25,89000000.0,61352810,Christopher Nolan,Warner Bros,144,5.1,32681
+MV-00189,Movie Title 189,Comedy,2003-05-21,212000000.0,610589707,James Cameron,Warner Bros,152,7.4,26396
+MV-00190,Movie Title 190,Documentary,10-03-2010,,294914800,Unknown Director,Indie,82,7.4,82611
+MV-00191,Movie Title 191,Horror,2009-12-28,215000000.0,0,Unknown Director,Sony,125,1.1,10622
+MV-00192,Movie Title 192,Romance,2002-11-11,,828310323,Christopher Nolan,Indie,171,8.7,1115
+MV-00193,Movie Title 193,Documentary,2020-09-02,47000000.0,45214926,Martin Scorsese,Paramount,116,9.9,83586
+MV-00194,Movie Title 194,Adventure,2016-03-03,283000000.0,161384333,Quentin Tarantino,Sony,82,8.8,29509
+MV-00195,Movie Title 195,Documentary,2007/05/03,218000000.0,764658591,Martin Scorsese,Warner Bros,140,3.9,63370
+MV-00196,Movie Title 196,Action,2015-10-01,246000000.0,0,Unknown Director,Indie,89,2.8,84573
+MV-00197,Movie Title 197,Documentary,2011-05-15,142000000.0,632140852,Christopher Nolan,Universal,101,5.1,11971
+MV-00198,Movie Title 198,Comedy,2001-10-08,45000000.0,174191847,Quentin Tarantino,Warner Bros,114,6.7,14112
+MV-00199,Movie Title 199,Action,2002-04-21,243000000.0,1178414619,Steven Spielberg,Warner Bros,134,1.1,61091
+MV-00200,Movie Title 200,Sci-Fi,07-09-2008,177000000.0,260576265,Quentin Tarantino,Sony,108,9.0,44019
+MV-00201,Movie Title 201,Documentary,2000-09-29,203000000.0,889097410,Christopher Nolan,Disney,178,7.5,35294
+MV-00202,Movie Title 202,Romance,2009-02-07,239000000.0,854049952,James Cameron,Universal,106,6.7,20339
+MV-00203,Movie Title 203,Adventure,2004-02-24,184000000.0,572846422,Quentin Tarantino,Indie,127,6.9,74688
+MV-00204,Movie Title 204,Sci-Fi,2010-10-26,,1208711683,James Cameron,Universal,100,6.9,51250
+MV-00205,Movie Title 205,Drama,2007-10-09,39000000.0,135103956,Unknown Director,Disney,179,2.8,57654
+MV-00206,Movie Title 206,Sci-Fi,2012-04-25,89000000.0,119108185,Greta Gerwig,Warner Bros,82,2.0,51639
+MV-00207,Movie Title 207,Adventure,2014-04-22,150000000.0,745704230,Quentin Tarantino,Indie,90,1.3,31253
+MV-00208,Movie Title 208,Sci-Fi,2003-12-06,105000000.0,0,Steven Spielberg,Indie,137,5.4,24352
+MV-00209,Movie Title 209,Horror,2004-03-23,,530177992,James Cameron,Universal,172,4.1,97213
+MV-00210,Movie Title 210,Adventure,02-08-2019,274000000.0,805703182,Steven Spielberg,Paramount,142,4.5,48945
+MV-00211,Movie Title 211,Action,2005-05-29,189000000.0,263958810,Unknown Director,Warner Bros,105,3.4,7367
+MV-00212,Movie Title 212,Drama,2005-10-19,186000000.0,129006431,Unknown Director,Universal,127,8.2,7475
+MV-00213,Movie Title 213,Comedy,2006-08-30,99000000.0,423932025,Christopher Nolan,Paramount,110,9.2,97539
+MV-00214,Movie Title 214,Sci-Fi,2016-01-11,255000000.0,1169325546,Christopher Nolan,Universal,166,9.5,72008
+MV-00215,Movie Title 215,Action,2011-08-26,216000000.0,383683201,Unknown Director,Paramount,149,3.4,60369
+MV-00216,Movie Title 216,Horror,2009-04-13,85000000.0,216870450,James Cameron,Sony,88,2.2,1300
+MV-00217,Movie Title 217,Comedy,2023-05-26,296000000.0,1293401105,Greta Gerwig,Disney,131,8.4,50735
+MV-00218,Movie Title 218,Sci-Fi,2015-07-14,207000000.0,440125988,James Cameron,Universal,131,7.4,22212
+MV-00219,Movie Title 219,Horror,2012-10-18,126000000.0,241031415,Martin Scorsese,Indie,118,2.9,25772
+MV-00220,Movie Title 220,Romance,06-07-2001,61000000.0,161580685,Unknown Director,Sony,153,3.2,79580
+MV-00221,Movie Title 221,Action,2016-12-18,58000000.0,225874972,Unknown Director,Disney,98,1.2,68785
+MV-00222,Movie Title 222,Action,2012-01-04,237000000.0,594642593,Unknown Director,Universal,125,1.6,10646
+MV-00223,Movie Title 223,Documentary,2021-01-23,252000000.0,587996369,Christopher Nolan,Indie,97,1.4,60869
+MV-00224,Movie Title 224,Action,2010-11-29,80000000.0,272004933,Christopher Nolan,Sony,98,2.8,95092
+MV-00225,Movie Title 225,Comedy,2010/08/22,201000000.0,640457331,Greta Gerwig,Universal,110,5.1,87444
+MV-00226,Movie Title 226,Horror,2000-11-03,82000000.0,0,Quentin Tarantino,Paramount,131,8.5,68097
+MV-00227,Movie Title 227,Sci-Fi,2006-08-04,291000000.0,1002989781,Unknown Director,Indie,103,2.2,18224
+MV-00228,Movie Title 228,Sci-Fi,2015-05-02,282000000.0,0,James Cameron,Universal,124,9.5,53367
+MV-00229,Movie Title 229,Action,2014-06-23,93000000.0,431106800,Unknown Director,Disney,110,4.4,41634
+MV-00230,Movie Title 230,Sci-Fi,27-09-2000,231000000.0,642775011,Christopher Nolan,Indie,105,7.1,32841
+MV-00231,Movie Title 231,Action,2013-11-21,10000000.0,49813496,Christopher Nolan,Warner Bros,106,7.4,89796
+MV-00232,Movie Title 232,Sci-Fi,2017-01-11,224000000.0,919254750,James Cameron,Warner Bros,128,1.8,3900
+MV-00233,Movie Title 233,Documentary,2014-12-21,8000000.0,0,Unknown Director,Paramount,162,7.7,34466
+MV-00234,Movie Title 234,Comedy,2012-06-10,194000000.0,953981691,Quentin Tarantino,Sony,154,8.5,14320
+MV-00235,Movie Title 235,Drama,2014-06-13,,0,Quentin Tarantino,Paramount,155,7.1,97313
+MV-00236,Movie Title 236,Documentary,2002-11-13,98000000.0,328653311,Quentin Tarantino,Warner Bros,86,6.3,84652
+MV-00237,Movie Title 237,Sci-Fi,2014-05-18,146000000.0,379624174,Greta Gerwig,Universal,122,3.1,35081
+MV-00238,Movie Title 238,Documentary,2021-10-31,56000000.0,192697396,Greta Gerwig,Disney,167,9.3,60906
+MV-00239,Movie Title 239,Horror,2003-04-11,35000000.0,109816188,Quentin Tarantino,Disney,146,3.0,95637
+MV-00240,Movie Title 240,Romance,25-01-2019,58000000.0,281991853,Greta Gerwig,Warner Bros,144,2.8,90403
+MV-00241,Movie Title 241,Action,2011-01-24,121000000.0,157780140,Martin Scorsese,Universal,106,5.3,53916
+MV-00242,Movie Title 242,Adventure,2020-09-09,3000000.0,2225544,Quentin Tarantino,Disney,162,4.7,42568
+MV-00243,Movie Title 243,Action,2014-03-06,224000000.0,117127411,Steven Spielberg,Universal,152,2.7,7069
+MV-00244,Movie Title 244,Romance,2000-11-24,65000000.0,139088921,Steven Spielberg,Paramount,137,7.3,5978
+MV-00245,Movie Title 245,Action,2003-08-17,67000000.0,318056493,Unknown Director,Universal,147,9.5,26077
+MV-00246,Movie Title 246,Romance,2006-02-20,39000000.0,25197009,Martin Scorsese,Indie,104,4.2,87234
+MV-00247,Movie Title 247,Comedy,2000-09-14,199000000.0,719664881,James Cameron,Paramount,139,9.9,67045
+MV-00248,Movie Title 248,Action,2014-09-14,248000000.0,620941860,Quentin Tarantino,Universal,164,8.9,79759
+MV-00249,Movie Title 249,Sci-Fi,2019-12-24,91000000.0,251396117,Quentin Tarantino,Indie,142,8.1,38713
+MV-00250,Movie Title 250,Romance,06-05-2014,51000000.0,114017049,Greta Gerwig,Paramount,158,1.5,35349
+MV-00251,Movie Title 251,Drama,2015-04-19,,280900595,James Cameron,Paramount,177,3.4,44802
+MV-00252,Movie Title 252,Romance,2005-08-31,249000000.0,689091430,Steven Spielberg,Indie,168,7.7,7388
+MV-00253,Movie Title 253,Adventure,2023-06-11,166000000.0,500557727,Christopher Nolan,Sony,173,2.4,98313
+MV-00254,Movie Title 254,Romance,2003-11-13,125000000.0,238234945,Christopher Nolan,Warner Bros,175,5.6,1477
+MV-00255,Movie Title 255,Sci-Fi,2015/02/05,94000000.0,152132559,Martin Scorsese,Disney,129,3.3,85030
+MV-00256,Movie Title 256,Comedy,2002-03-10,111000000.0,79436621,Greta Gerwig,Paramount,140,6.5,76649
+MV-00257,Movie Title 257,Documentary,2013-03-21,156000000.0,129360334,,Universal,162,4.6,94858
+MV-00258,Movie Title 258,Adventure,2022-01-09,106000000.0,309604345,Steven Spielberg,Warner Bros,156,6.5,27717
+MV-00259,Movie Title 259,Romance,2016-09-28,144000000.0,188409540,Martin Scorsese,Paramount,142,1.4,59873
+MV-00260,Movie Title 260,Adventure,09-04-2018,103000000.0,473415122,Martin Scorsese,Warner Bros,175,1.5,33257
+MV-00261,Movie Title 261,Horror,2016-03-25,216000000.0,1031450484,Steven Spielberg,Indie,150,5.3,99792
+MV-00262,Movie Title 262,Sci-Fi,2012-06-12,253000000.0,750252615,James Cameron,Indie,113,9.8,54700
+MV-00263,Movie Title 263,Documentary,2011-03-11,170000000.0,770448602,Steven Spielberg,Disney,142,1.6,91539
+MV-00264,Movie Title 264,Comedy,2009-08-19,290000000.0,1154747328,Steven Spielberg,Paramount,92,7.8,6568
+MV-00265,Movie Title 265,Sci-Fi,2001-04-12,179000000.0,514658263,Greta Gerwig,Disney,177,4.4,37203
+MV-00266,Movie Title 266,Romance,2002-10-08,33000000.0,17613680,Martin Scorsese,Warner Bros,113,5.1,26086
+MV-00267,Movie Title 267,Comedy,2005-01-21,262000000.0,1256269607,Unknown Director,Sony,115,1.4,27228
+MV-00268,Movie Title 268,Action,2006-07-18,256000000.0,763697506,Martin Scorsese,Sony,109,3.2,62761
+MV-00269,Movie Title 269,Romance,2019-02-15,75000000.0,174716636,Unknown Director,Paramount,112,9.0,60072
+MV-00270,Movie Title 270,Sci-Fi,16-09-2011,129000000.0,449968769,James Cameron,Disney,81,4.9,98578
+MV-00271,Movie Title 271,Romance,2022-04-05,227000000.0,0,James Cameron,Sony,135,3.7,92352
+MV-00272,Movie Title 272,Sci-Fi,2008-02-26,89000000.0,437940844,Greta Gerwig,Paramount,111,6.9,53320
+MV-00273,Movie Title 273,Documentary,2013-03-26,78000000.0,157952943,Greta Gerwig,Sony,153,2.7,52766
+MV-00274,Movie Title 274,Adventure,2008-05-09,229000000.0,393669476,Christopher Nolan,Paramount,97,5.6,41184
+MV-00275,Movie Title 275,Adventure,2002-03-04,242000000.0,308285071,Unknown Director,Indie,127,5.0,78235
+MV-00276,Movie Title 276,Comedy,2004-10-24,134000000.0,312706484,Unknown Director,Universal,146,3.6,24277
+MV-00277,Movie Title 277,Adventure,2004-08-28,186000000.0,411375629,James Cameron,Warner Bros,167,7.1,94028
+MV-00278,Movie Title 278,Documentary,2002-03-20,153000000.0,0,Steven Spielberg,Disney,136,1.3,47257
+MV-00279,Movie Title 279,Horror,2008-01-16,271000000.0,798069818,Unknown Director,Disney,138,6.6,5667
+MV-00280,Movie Title 280,Action,28-12-2008,27000000.0,16146117,Quentin Tarantino,Indie,97,5.0,36609
+MV-00281,Movie Title 281,Romance,2014-01-02,89000000.0,170127473,Unknown Director,Indie,136,3.2,90047
+MV-00282,Movie Title 282,Romance,2015-11-08,208000000.0,371885927,Christopher Nolan,Sony,169,6.3,67011
+MV-00283,Movie Title 283,Sci-Fi,2009-04-07,176000000.0,337352225,Quentin Tarantino,Universal,119,4.4,10453
+MV-00284,Movie Title 284,Adventure,2001-09-22,269000000.0,878331198,Steven Spielberg,Indie,166,8.5,55424
+MV-00285,Movie Title 285,Drama,2011/08/21,34000000.0,140595350,Unknown Director,Warner Bros,150,8.4,65705
+MV-00286,Movie Title 286,Comedy,2010-02-11,97000000.0,365383746,James Cameron,Universal,98,7.2,51350
+MV-00287,Movie Title 287,Action,2004-09-10,,568778256,Martin Scorsese,Disney,172,3.7,40187
+MV-00288,Movie Title 288,Comedy,2006-05-27,49000000.0,37149661,Martin Scorsese,Disney,115,5.8,10088
+MV-00289,Movie Title 289,Romance,2018-03-26,173000000.0,590715145,Martin Scorsese,Disney,111,2.8,83196
+MV-00290,Movie Title 290,Drama,05-02-2013,87000000.0,0,Unknown Director,Paramount,154,7.5,22061
+MV-00291,Movie Title 291,Drama,2004-03-25,251000000.0,612080140,Steven Spielberg,Sony,134,6.3,64616
+MV-00292,Movie Title 292,Sci-Fi,2001-04-13,153000000.0,533769363,Christopher Nolan,Warner Bros,104,7.7,26087
+MV-00293,Movie Title 293,Drama,2010-07-03,9000000.0,37079439,Quentin Tarantino,Universal,137,6.0,23095
+MV-00294,Movie Title 294,Adventure,2007-02-04,219000000.0,294090926,Greta Gerwig,Sony,129,5.3,91591
+MV-00295,Movie Title 295,Sci-Fi,2016-07-12,275000000.0,1061869466,Christopher Nolan,Universal,118,8.4,18169
+MV-00296,Movie Title 296,Comedy,2016-03-21,42000000.0,205316081,,Paramount,157,8.7,30198
+MV-00297,Movie Title 297,Sci-Fi,2014-07-26,114000000.0,344074096,James Cameron,Indie,105,2.1,27999
+MV-00298,Movie Title 298,Action,2001-07-09,180000000.0,95255414,Christopher Nolan,Warner Bros,112,8.3,23902
+MV-00299,Movie Title 299,Sci-Fi,2013-01-19,37000000.0,124498313,Steven Spielberg,Disney,125,3.5,1709
+MV-00300,Movie Title 300,Comedy,15-04-2018,300000000.0,197704157,Unknown Director,Disney,166,4.6,51658
+MV-00301,Movie Title 301,Romance,2012-11-24,1000000.0,1686048,Quentin Tarantino,Indie,105,8.9,63985
+MV-00302,Movie Title 302,Drama,2014-01-10,195000000.0,914979665,Unknown Director,Paramount,129,3.4,42224
+MV-00303,Movie Title 303,Comedy,2018-11-14,224000000.0,352606402,James Cameron,Sony,145,7.2,29481
+MV-00304,Movie Title 304,Romance,2009-12-03,206000000.0,0,Steven Spielberg,Universal,169,7.1,53150
+MV-00305,Movie Title 305,Comedy,2019-02-27,8000000.0,9825057,James Cameron,Warner Bros,96,1.5,66650
+MV-00306,Movie Title 306,Horror,2023-05-04,29000000.0,36952710,Christopher Nolan,Universal,180,9.7,93708
+MV-00307,Movie Title 307,Documentary,2013-10-03,187000000.0,697633989,Christopher Nolan,Sony,176,6.4,89669
+MV-00308,Movie Title 308,Sci-Fi,2002-05-25,217000000.0,263517905,Quentin Tarantino,Warner Bros,108,1.1,70352
+MV-00309,Movie Title 309,Adventure,2009-09-04,205000000.0,418226453,Quentin Tarantino,Universal,92,4.1,94941
+MV-00310,Movie Title 310,Drama,25-08-2017,257000000.0,786745681,James Cameron,Indie,168,1.7,18291
+MV-00311,Movie Title 311,Comedy,2013-05-09,,218244252,Christopher Nolan,Warner Bros,158,6.1,92868
+MV-00312,Movie Title 312,Drama,2008-05-10,299000000.0,0,Unknown Director,Disney,144,8.1,30669
+MV-00313,Movie Title 313,Romance,2011-06-11,183000000.0,825446229,Unknown Director,Indie,159,6.7,53584
+MV-00314,Movie Title 314,Documentary,2011-05-05,103000000.0,87866048,Greta Gerwig,Sony,179,5.7,73340
+MV-00315,Movie Title 315,Drama,2013/08/21,52000000.0,235071079,Steven Spielberg,Warner Bros,106,6.5,39708
+MV-00316,Movie Title 316,Documentary,2014-01-12,247000000.0,899145821,Christopher Nolan,Indie,123,1.9,54472
+MV-00317,Movie Title 317,Romance,2023-04-21,108000000.0,220854977,Steven Spielberg,Universal,158,6.9,11440
+MV-00318,Movie Title 318,Horror,2001-09-24,194000000.0,620276412,Martin Scorsese,Disney,149,4.4,63915
+MV-00319,Movie Title 319,Horror,2023-12-09,115000000.0,394721282,Steven Spielberg,Sony,167,9.1,97800
+MV-00320,Movie Title 320,Drama,10-09-2021,88000000.0,63787831,Unknown Director,Disney,86,6.7,64277
+MV-00321,Movie Title 321,Horror,2009-06-06,102000000.0,287320801,James Cameron,Universal,94,5.9,82119
+MV-00322,Movie Title 322,Action,2003-12-13,120000000.0,484253680,Steven Spielberg,Universal,103,4.0,87956
+MV-00323,Movie Title 323,Horror,2011-09-30,199000000.0,433801725,Quentin Tarantino,Disney,108,5.4,34727
+MV-00324,Movie Title 324,Adventure,2004-06-24,106000000.0,492999414,Quentin Tarantino,Paramount,175,5.8,97237
+MV-00325,Movie Title 325,Adventure,2023-08-18,123000000.0,0,Christopher Nolan,Paramount,103,8.5,64927
+MV-00326,Movie Title 326,Adventure,2007-11-05,57000000.0,107272973,Quentin Tarantino,Disney,133,2.0,89338
+MV-00327,Movie Title 327,Horror,2019-07-10,233000000.0,0,Quentin Tarantino,Warner Bros,176,8.4,75796
+MV-00328,Movie Title 328,Action,2006-01-13,1000000.0,1228657,James Cameron,Paramount,147,7.8,97510
+MV-00329,Movie Title 329,Action,2023-04-16,116000000.0,365462925,Martin Scorsese,Paramount,172,5.8,4496
+MV-00330,Movie Title 330,Action,20-03-2019,140000000.0,135355304,James Cameron,Sony,177,8.1,96878
+MV-00331,Movie Title 331,Drama,2022-04-08,20000000.0,23084873,Christopher Nolan,Warner Bros,166,3.8,99308
+MV-00332,Movie Title 332,Drama,2023-11-08,184000000.0,883415789,Martin Scorsese,Warner Bros,134,1.9,2302
+MV-00333,Movie Title 333,Adventure,2017-06-09,42000000.0,0,Unknown Director,Indie,122,9.6,25875
+MV-00334,Movie Title 334,Comedy,2015-12-15,256000000.0,1023142282,Unknown Director,Universal,112,9.6,54359
+MV-00335,Movie Title 335,Comedy,2003-01-04,232000000.0,575589318,Christopher Nolan,Disney,106,5.5,12614
+MV-00336,Movie Title 336,Adventure,2020-03-18,37000000.0,0,Christopher Nolan,Disney,123,4.1,98828
+MV-00337,Movie Title 337,Documentary,2010-05-24,50000000.0,215174391,Christopher Nolan,Sony,151,4.8,15023
+MV-00338,Movie Title 338,Adventure,2020-03-17,120000000.0,150361077,Unknown Director,Indie,160,2.9,64275
+MV-00339,Movie Title 339,Drama,2006-07-02,153000000.0,181876368,Greta Gerwig,Disney,139,5.3,25623
+MV-00340,Movie Title 340,Romance,09-03-2012,16000000.0,76306940,Greta Gerwig,Warner Bros,110,4.3,7681
+MV-00341,Movie Title 341,Documentary,2012-06-04,209000000.0,680574848,Quentin Tarantino,Warner Bros,171,4.5,29253
+MV-00342,Movie Title 342,Horror,2017-01-20,140000000.0,494129384,Martin Scorsese,Indie,86,9.2,20665
+MV-00343,Movie Title 343,Sci-Fi,2020-12-08,217000000.0,0,Quentin Tarantino,Indie,173,6.3,97136
+MV-00344,Movie Title 344,Comedy,2017-09-02,110000000.0,184876199,Unknown Director,Sony,171,2.5,16573
+MV-00345,Movie Title 345,Sci-Fi,2023/06/19,204000000.0,269925730,,Universal,146,6.1,85643
+MV-00346,Movie Title 346,Horror,2018-02-17,104000000.0,97457953,Quentin Tarantino,Disney,136,5.4,87376
+MV-00347,Movie Title 347,Adventure,2006-11-12,187000000.0,0,Christopher Nolan,Paramount,145,1.9,70765
+MV-00348,Movie Title 348,Drama,2003-08-05,230000000.0,1054173259,Unknown Director,Universal,161,9.9,50845
+MV-00349,Movie Title 349,Adventure,2017-03-03,63000000.0,64006686,Greta Gerwig,Paramount,157,10.0,53850
+MV-00350,Movie Title 350,Action,09-12-2005,213000000.0,0,Steven Spielberg,Sony,81,8.3,3374
+MV-00351,Movie Title 351,Romance,2002-10-29,66000000.0,0,Greta Gerwig,Universal,105,7.8,1763
+MV-00352,Movie Title 352,Sci-Fi,2003-09-08,177000000.0,194479378,Quentin Tarantino,Disney,166,7.3,47251
+MV-00353,Movie Title 353,Drama,2008-11-14,296000000.0,0,Unknown Director,Sony,152,3.7,36135
+MV-00354,Movie Title 354,Horror,2019-11-25,289000000.0,1040829553,Quentin Tarantino,Universal,125,6.6,989
+MV-00355,Movie Title 355,Action,2005-02-28,13000000.0,57408583,James Cameron,Indie,125,1.1,32461
+MV-00356,Movie Title 356,Documentary,2011-04-04,263000000.0,1100032292,Martin Scorsese,Warner Bros,174,7.4,33875
+MV-00357,Movie Title 357,Horror,2011-05-03,,697614888,Steven Spielberg,Indie,113,6.6,21576
+MV-00358,Movie Title 358,Adventure,2014-05-15,224000000.0,260621271,Quentin Tarantino,Disney,138,5.6,75500
+MV-00359,Movie Title 359,Documentary,2001-11-18,193000000.0,651496644,Steven Spielberg,Indie,168,6.2,45463
+MV-00360,Movie Title 360,Documentary,17-03-2015,271000000.0,0,Martin Scorsese,Sony,149,6.0,69366
+MV-00361,Movie Title 361,Comedy,2016-03-30,92000000.0,115868390,Unknown Director,Warner Bros,88,9.2,55230
+MV-00362,Movie Title 362,Action,2001-06-08,64000000.0,0,James Cameron,Universal,95,5.9,75807
+MV-00363,Movie Title 363,Action,2001-09-11,57000000.0,166000961,Martin Scorsese,Sony,122,2.6,69631
+MV-00364,Movie Title 364,Horror,2022-12-29,247000000.0,479205453,Martin Scorsese,Sony,110,8.4,43675
+MV-00365,Movie Title 365,Comedy,2012-07-07,45000000.0,191398161,Christopher Nolan,Universal,179,7.0,99757
+MV-00366,Movie Title 366,Action,2006-07-28,125000000.0,146762152,Martin Scorsese,Indie,90,3.2,57174
+MV-00367,Movie Title 367,Drama,2005-02-11,111000000.0,502198327,Steven Spielberg,Warner Bros,175,8.5,16558
+MV-00368,Movie Title 368,Horror,2012-07-14,246000000.0,1181065803,Martin Scorsese,Sony,138,9.9,73604
+MV-00369,Movie Title 369,Sci-Fi,2021-10-15,233000000.0,668803820,Steven Spielberg,Warner Bros,91,4.2,89038
+MV-00370,Movie Title 370,Sci-Fi,06-04-2006,221000000.0,1005036696,Steven Spielberg,Indie,81,3.6,23974
+MV-00371,Movie Title 371,Horror,2022-01-06,211000000.0,496164616,Unknown Director,Warner Bros,173,4.3,77130
+MV-00372,Movie Title 372,Documentary,2020-11-27,166000000.0,573438761,Martin Scorsese,Disney,85,9.7,44417
+MV-00373,Movie Title 373,Action,2006-02-11,67000000.0,88218358,Martin Scorsese,Paramount,108,6.0,94750
+MV-00374,Movie Title 374,Action,2017-12-24,179000000.0,91383807,Greta Gerwig,Paramount,86,4.5,93812
+MV-00375,Movie Title 375,Action,2018/11/18,136000000.0,428566080,Unknown Director,Warner Bros,133,1.9,33321
+MV-00376,Movie Title 376,Sci-Fi,2003-04-09,201000000.0,0,Unknown Director,Sony,124,9.4,18264
+MV-00377,Movie Title 377,Documentary,2007-04-29,99000000.0,179681845,Martin Scorsese,Indie,142,6.3,49624
+MV-00378,Movie Title 378,Romance,2001-01-08,,400824946,James Cameron,Paramount,92,8.8,29545
+MV-00379,Movie Title 379,Adventure,2002-05-14,18000000.0,84778281,Greta Gerwig,Paramount,142,5.4,99945
+MV-00380,Movie Title 380,Romance,21-09-2001,230000000.0,0,Martin Scorsese,Disney,144,8.5,3247
+MV-00381,Movie Title 381,Horror,2020-06-12,204000000.0,166913503,Unknown Director,Warner Bros,90,7.0,40474
+MV-00382,Movie Title 382,Horror,2022-11-06,96000000.0,159479467,Quentin Tarantino,Warner Bros,134,8.0,75648
+MV-00383,Movie Title 383,Adventure,2023-01-14,69000000.0,337037812,Steven Spielberg,Disney,87,6.6,14520
+MV-00384,Movie Title 384,Comedy,2004-12-01,277000000.0,0,Christopher Nolan,Sony,154,5.3,20014
+MV-00385,Movie Title 385,Sci-Fi,2023-04-15,130000000.0,535264043,James Cameron,Warner Bros,123,3.3,94217
+MV-00386,Movie Title 386,Drama,2011-07-23,,254670446,Unknown Director,Disney,142,9.0,77361
+MV-00387,Movie Title 387,Comedy,2005-01-17,61000000.0,255331126,Quentin Tarantino,Disney,165,2.3,32408
+MV-00388,Movie Title 388,Adventure,2000-07-04,,778708640,Martin Scorsese,Warner Bros,131,3.7,19950
+MV-00389,Movie Title 389,Romance,2003-06-23,111000000.0,306436450,Steven Spielberg,Universal,174,5.0,30007
+MV-00390,Movie Title 390,Action,29-01-2000,43000000.0,0,Quentin Tarantino,Paramount,124,8.9,64319
+MV-00391,Movie Title 391,Sci-Fi,2019-03-07,111000000.0,270144052,Unknown Director,Warner Bros,124,1.6,72739
+MV-00392,Movie Title 392,Horror,2016-08-28,21000000.0,18686540,James Cameron,Paramount,114,6.3,92920
+MV-00393,Movie Title 393,Action,2017-11-04,256000000.0,1042924380,Christopher Nolan,Warner Bros,110,4.6,21455
+MV-00394,Movie Title 394,Romance,2021-05-21,127000000.0,323618097,Christopher Nolan,Indie,175,3.9,32360
+MV-00395,Movie Title 395,Adventure,2017-03-15,123000000.0,85161073,Unknown Director,Universal,177,9.5,35768
+MV-00396,Movie Title 396,Romance,2003-04-05,50000000.0,175985790,Christopher Nolan,Warner Bros,100,6.6,49148
+MV-00397,Movie Title 397,Romance,2002-07-19,85000000.0,176078958,Steven Spielberg,Paramount,107,6.1,38021
+MV-00398,Movie Title 398,Horror,2001-11-09,53000000.0,33102974,Steven Spielberg,Universal,107,2.0,94867
+MV-00399,Movie Title 399,Documentary,2000-07-11,107000000.0,375438464,Christopher Nolan,Warner Bros,81,2.6,5582
+MV-00400,Movie Title 400,Comedy,18-11-2012,116000000.0,302483283,James Cameron,Paramount,88,9.5,22294
+MV-00401,Movie Title 401,Horror,2020-06-12,286000000.0,829818237,Martin Scorsese,Disney,161,5.0,19855
+MV-00402,Movie Title 402,Action,2020-12-02,100000000.0,205423943,Quentin Tarantino,Disney,89,5.8,58564
+MV-00403,Movie Title 403,Romance,2013-12-17,126000000.0,220902793,Christopher Nolan,Indie,99,2.9,67154
+MV-00404,Movie Title 404,Sci-Fi,2015-11-08,199000000.0,864806791,James Cameron,Universal,154,7.6,33733
+MV-00405,Movie Title 405,Adventure,2002/04/18,31000000.0,48339500,Martin Scorsese,Paramount,171,3.8,2245
+MV-00406,Movie Title 406,Documentary,2018-04-06,,393993721,,Universal,146,3.4,33091
+MV-00407,Movie Title 407,Documentary,2022-10-11,59000000.0,73893005,Unknown Director,Universal,147,7.3,23905
+MV-00408,Movie Title 408,Romance,2017-08-30,50000000.0,161003898,James Cameron,Sony,124,6.6,2534
+MV-00409,Movie Title 409,Romance,2003-01-28,182000000.0,254172860,Martin Scorsese,Universal,104,4.0,32599
+MV-00410,Movie Title 410,Sci-Fi,01-12-2011,11000000.0,27621344,Greta Gerwig,Paramount,147,9.2,16514
+MV-00411,Movie Title 411,Sci-Fi,2014-07-28,154000000.0,592885555,Quentin Tarantino,Indie,83,3.6,39211
+MV-00412,Movie Title 412,Adventure,2000-08-21,128000000.0,118407832,Martin Scorsese,Indie,177,2.2,14651
+MV-00413,Movie Title 413,Romance,2012-12-27,102000000.0,440924872,Quentin Tarantino,Universal,149,10.0,23414
+MV-00414,Movie Title 414,Drama,2011-06-19,291000000.0,1361531753,Quentin Tarantino,Indie,133,6.3,63464
+MV-00415,Movie Title 415,Adventure,2008-11-01,196000000.0,346840342,Unknown Director,Paramount,89,2.3,41434
+MV-00416,Movie Title 416,Documentary,2022-10-16,171000000.0,342651343,Martin Scorsese,Paramount,135,9.9,2006
+MV-00417,Movie Title 417,Sci-Fi,2013-03-23,284000000.0,816117816,Quentin Tarantino,Disney,87,3.1,14919
+MV-00418,Movie Title 418,Comedy,2017-07-27,72000000.0,297072813,Unknown Director,Warner Bros,111,5.4,57545
+MV-00419,Movie Title 419,Documentary,2018-03-24,138000000.0,198899741,Steven Spielberg,Paramount,158,9.4,13789
+MV-00420,Movie Title 420,Adventure,02-01-2011,121000000.0,256546800,James Cameron,Indie,159,4.9,22163
+MV-00421,Movie Title 421,Documentary,2000-03-18,51000000.0,183589359,Martin Scorsese,Sony,87,1.2,88319
+MV-00422,Movie Title 422,Sci-Fi,2014-05-13,201000000.0,0,Greta Gerwig,Indie,121,6.4,3800
+MV-00423,Movie Title 423,Documentary,2012-09-25,267000000.0,1185870889,Unknown Director,Warner Bros,136,7.3,34533
+MV-00424,Movie Title 424,Action,2015-02-22,120000000.0,444800393,Martin Scorsese,Warner Bros,169,8.1,97413
+MV-00425,Movie Title 425,Documentary,2000-09-21,279000000.0,0,James Cameron,Sony,134,7.6,6627
+MV-00426,Movie Title 426,Comedy,2011-02-02,272000000.0,1357836932,Greta Gerwig,Sony,163,9.3,3045
+MV-00427,Movie Title 427,Action,2012-02-01,45000000.0,0,James Cameron,Indie,114,2.2,81730
+MV-00428,Movie Title 428,Documentary,2020-11-06,129000000.0,391322742,Steven Spielberg,Paramount,104,5.0,59415
+MV-00429,Movie Title 429,Documentary,2021-08-05,229000000.0,557387147,Unknown Director,Sony,117,8.6,92949
+MV-00430,Movie Title 430,Drama,23-05-2003,291000000.0,709991831,Martin Scorsese,Indie,122,4.7,57229
+MV-00431,Movie Title 431,Adventure,2013-08-11,,80951362,Steven Spielberg,Indie,153,7.0,37177
+MV-00432,Movie Title 432,Comedy,2004-05-04,115000000.0,425667985,Quentin Tarantino,Universal,162,2.2,57887
+MV-00433,Movie Title 433,Drama,2018-08-25,237000000.0,868855784,Christopher Nolan,Disney,142,7.9,80121
+MV-00434,Movie Title 434,Action,2012-04-01,16000000.0,39756999,Greta Gerwig,Warner Bros,142,8.6,58374
+MV-00435,Movie Title 435,Romance,2006/12/24,249000000.0,739034963,Quentin Tarantino,Paramount,166,5.4,72674
+MV-00436,Movie Title 436,Drama,2004-06-14,141000000.0,345238462,Christopher Nolan,Universal,158,3.1,97004
+MV-00437,Movie Title 437,Documentary,2000-07-07,242000000.0,567645593,Quentin Tarantino,Sony,132,3.1,84917
+MV-00438,Movie Title 438,Adventure,2009-12-11,163000000.0,329438407,Christopher Nolan,Paramount,124,4.6,23510
+MV-00439,Movie Title 439,Romance,2004-02-02,280000000.0,186541980,Steven Spielberg,Sony,94,8.2,36162
+MV-00440,Movie Title 440,Horror,19-10-2005,59000000.0,72804452,Christopher Nolan,Universal,171,7.4,37611
+MV-00441,Movie Title 441,Action,2004-09-15,12000000.0,55930065,James Cameron,Universal,153,8.6,35562
+MV-00442,Movie Title 442,Drama,2016-03-22,253000000.0,716636104,Christopher Nolan,Sony,113,5.1,11127
+MV-00443,Movie Title 443,Drama,2013-04-28,208000000.0,0,Quentin Tarantino,Warner Bros,120,6.2,13187
+MV-00444,Movie Title 444,Horror,2002-08-23,242000000.0,967596160,James Cameron,Warner Bros,100,7.6,46766
+MV-00445,Movie Title 445,Action,2005-09-13,299000000.0,289967434,,Universal,163,8.7,81994
+MV-00446,Movie Title 446,Drama,2019-06-06,222000000.0,0,Steven Spielberg,Disney,151,1.1,50414
+MV-00447,Movie Title 447,Drama,2023-11-22,51000000.0,147767233,Martin Scorsese,Paramount,178,9.4,32845
+MV-00448,Movie Title 448,Documentary,2004-09-23,77000000.0,42601577,Unknown Director,Universal,81,8.9,93684
+MV-00449,Movie Title 449,Sci-Fi,2008-10-26,84000000.0,204467853,Christopher Nolan,Sony,145,3.6,23659
+MV-00450,Movie Title 450,Drama,15-11-2022,190000000.0,0,Greta Gerwig,Paramount,143,9.9,58869
+MV-00451,Movie Title 451,Adventure,2006-05-20,77000000.0,150669913,Unknown Director,Indie,135,8.6,17760
+MV-00452,Movie Title 452,Horror,2022-05-31,84000000.0,345619780,Unknown Director,Indie,124,1.7,15723
+MV-00453,Movie Title 453,Drama,2023-03-22,,582228256,Martin Scorsese,Universal,152,5.6,47470
+MV-00454,Movie Title 454,Documentary,2022-12-11,283000000.0,1303153522,James Cameron,Warner Bros,100,8.5,3896
+MV-00455,Movie Title 455,Comedy,2005-05-03,45000000.0,77870294,Martin Scorsese,Universal,104,8.9,26710
+MV-00456,Movie Title 456,Horror,2013-08-29,274000000.0,747268722,Steven Spielberg,Disney,97,8.3,46514
+MV-00457,Movie Title 457,Sci-Fi,2018-10-17,208000000.0,1001507075,Christopher Nolan,Sony,121,5.3,90453
+MV-00458,Movie Title 458,Romance,2015-10-06,54000000.0,56956913,,Indie,132,5.4,96905
+MV-00459,Movie Title 459,Comedy,2021-08-23,64000000.0,280014564,Christopher Nolan,Paramount,110,6.4,81161
+MV-00460,Movie Title 460,Romance,06-02-2022,,979171378,James Cameron,Warner Bros,160,6.7,94663
+MV-00461,Movie Title 461,Documentary,2000-12-19,205000000.0,276562887,Christopher Nolan,Universal,88,2.0,94351
+MV-00462,Movie Title 462,Adventure,2010-07-20,,110941076,Greta Gerwig,Warner Bros,120,8.1,74336
+MV-00463,Movie Title 463,Drama,2014-09-03,134000000.0,0,Steven Spielberg,Paramount,162,1.2,62986
+MV-00464,Movie Title 464,Adventure,2001-02-11,134000000.0,0,Greta Gerwig,Sony,123,5.3,53775
+MV-00465,Movie Title 465,Comedy,2013/03/21,,51556197,Quentin Tarantino,Sony,80,6.3,57210
+MV-00466,Movie Title 466,Comedy,2012-03-20,77000000.0,176883350,Christopher Nolan,Indie,137,3.4,60061
+MV-00467,Movie Title 467,Drama,2010-03-25,296000000.0,421281398,Martin Scorsese,Universal,110,5.2,38864
+MV-00468,Movie Title 468,Horror,2001-07-16,279000000.0,0,Christopher Nolan,Warner Bros,103,5.8,42952
+MV-00469,Movie Title 469,Adventure,2004-12-07,88000000.0,0,Greta Gerwig,Sony,113,3.7,88589
+MV-00470,Movie Title 470,Sci-Fi,03-08-2016,266000000.0,1038928992,Unknown Director,Indie,125,2.1,5753
+MV-00471,Movie Title 471,Romance,2016-10-22,11000000.0,41552178,Unknown Director,Universal,150,9.7,79979
+MV-00472,Movie Title 472,Drama,2004-05-30,232000000.0,717243585,Greta Gerwig,Disney,124,5.4,30429
+MV-00473,Movie Title 473,Documentary,2009-07-03,10000000.0,30948188,James Cameron,Paramount,173,6.8,73499
+MV-00474,Movie Title 474,Documentary,2000-09-12,189000000.0,240580101,Quentin Tarantino,Disney,157,9.7,81430
+MV-00475,Movie Title 475,Comedy,2001-07-29,295000000.0,154335351,Greta Gerwig,Warner Bros,147,5.6,46830
+MV-00476,Movie Title 476,Horror,2005-06-09,98000000.0,276702387,Christopher Nolan,Universal,169,2.2,21541
+MV-00477,Movie Title 477,Horror,2002-05-10,155000000.0,330659345,Quentin Tarantino,Warner Bros,107,4.2,8829
+MV-00478,Movie Title 478,Comedy,2020-06-22,248000000.0,467602692,Steven Spielberg,Disney,134,7.3,45261
+MV-00479,Movie Title 479,Comedy,2017-11-12,89000000.0,163681227,Steven Spielberg,Disney,160,4.3,19822
+MV-00480,Movie Title 480,Horror,12-04-2015,207000000.0,421578982,Martin Scorsese,Indie,163,5.1,63123
+MV-00481,Movie Title 481,Adventure,2005-07-10,135000000.0,318432067,Unknown Director,Sony,133,4.7,90612
+MV-00482,Movie Title 482,Horror,2020-07-13,107000000.0,311911200,Christopher Nolan,Paramount,124,3.7,66597
+MV-00483,Movie Title 483,Comedy,2023-03-12,87000000.0,430051551,Quentin Tarantino,Sony,119,8.9,50738
+MV-00484,Movie Title 484,Romance,2022-04-19,187000000.0,177515361,Steven Spielberg,Paramount,115,8.7,41529
+MV-00485,Movie Title 485,Documentary,2011-02-24,270000000.0,395442874,James Cameron,Warner Bros,125,4.1,62785
+MV-00486,Movie Title 486,Adventure,2021-12-18,195000000.0,848644101,James Cameron,Paramount,146,3.9,3191
+MV-00487,Movie Title 487,Sci-Fi,2015-01-06,148000000.0,467290740,Martin Scorsese,Indie,110,1.8,16375
+MV-00488,Movie Title 488,Horror,2014-03-12,168000000.0,0,Unknown Director,Paramount,166,4.0,21834
+MV-00489,Movie Title 489,Horror,2005-06-06,242000000.0,798095698,Martin Scorsese,Paramount,120,1.1,69324
+MV-00490,Movie Title 490,Action,16-11-2021,290000000.0,224964043,Steven Spielberg,Indie,84,5.4,67392
+MV-00491,Movie Title 491,Sci-Fi,2013-11-15,265000000.0,992340142,Unknown Director,Indie,160,6.3,27571
+MV-00492,Movie Title 492,Documentary,2008-04-24,13000000.0,49356814,Steven Spielberg,Disney,161,9.1,33040
+MV-00493,Movie Title 493,Romance,2019-03-29,103000000.0,384424093,Steven Spielberg,Paramount,125,1.8,80070
+MV-00494,Movie Title 494,Documentary,2006-06-11,98000000.0,311852185,Unknown Director,Universal,141,7.5,46385
+MV-00495,Movie Title 495,Comedy,2006/09/24,121000000.0,209885596,Christopher Nolan,Paramount,86,8.9,16904
+MV-00496,Movie Title 496,Adventure,2010-09-16,12000000.0,45927688,Greta Gerwig,Indie,113,3.5,4883
+MV-00497,Movie Title 497,Romance,2015-04-10,155000000.0,204610709,Unknown Director,Universal,91,9.2,66040
+MV-00498,Movie Title 498,Horror,2023-01-03,149000000.0,231255749,Martin Scorsese,Warner Bros,80,5.5,46885
+MV-00499,Movie Title 499,Romance,2000-05-18,223000000.0,1088834513,Christopher Nolan,Universal,85,3.7,77894

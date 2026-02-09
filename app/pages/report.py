@@ -134,8 +134,8 @@ def show():
                 logger.info(f"PDF report generated: {filename}")
                 
                 # Success message
-                st.success(f"Report generated successfully: {file_path}")
-                st.info(f"✅ Report saved as: **{filename}**")
+                st.success("Report generated successfully!")
+                st.info(f"✅ Ready for download: **{filename}**")
             
             except Exception as e:
                 st.error(f"❌ Error generating report: {str(e)}")

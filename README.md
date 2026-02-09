@@ -107,6 +107,23 @@ streamlit run app/main.py
 
 The application will open in your default browser at `http://localhost:8501`
 
+## ☁️ Deployment
+
+### Streamlit Cloud
+1. Push your code to GitHub.
+2. Login to [Streamlit Cloud](https://streamlit.io/cloud).
+3. Connect your account and deploy the repository.
+4. Add your secrets (`GROQ_API_KEY`) in the "Advanced Settings" secrets management.
+
+### Hugging Face Spaces
+1. Create a new Space (SDK: Streamlit).
+2. Upload your files (or connect GitHub).
+3. Set `GROQ_API_KEY` in the "Settings" -> "Variables and secrets" tab.
+4. **Note**: The `packages.txt` file (if present) ensures system dependencies are installed. `requirements.txt` handles Python libraries.
+
+### Docker (Optional)
+A `Dockerfile` can be added for containerized deployment. Ensure `kaleido` dependencies are met in the base image.
+
 ## 📖 Usage Guide
 
 ### 1. Upload Dataset
